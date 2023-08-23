@@ -1,6 +1,16 @@
 def recursive_search(arr, target)
   # type your code in here
+  finding(arr, target)
 end
+
+def finding(arr, target)
+  arr.each do |value|
+    return true if value == target
+  end
+  false
+end
+
+
 
 if __FILE__ == $PROGRAM_NAME
   puts "Expecting: true"

@@ -1,6 +1,17 @@
 function recursiveSearch(arr, target) {
   // type your code here
+  return search(arr, target)
 }
+
+let search = (arr, target) => {
+  for (const val of arr) {
+    if (val === target) {
+      return true
+    }
+  }
+  return false
+}
+
 
 if (require.main === module) {
   // add your own tests in here
